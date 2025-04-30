@@ -215,7 +215,7 @@ void task_system_update(void *parameters)
 				if ((true == p_task_system_dta->flag) && (EV_SYS_04_ACTIVE == p_task_system_dta->event))
 				{
 					p_task_system_dta->flag = false;
-					put_event_task_actuator(EV_LED_XX_BLINK, ID_LED_A);
+					put_event_task_actuator(EV_LED_XX_NOT_BLINK, ID_LED_A);
 					p_task_system_dta->state = ST_SYS_00_BR_FALLING;
 				}
 				break;
