@@ -223,7 +223,7 @@ void task_system_update(void *parameters)
 
 			case ST_SYS_00_BR_FALLING:
 
-				if ((true == p_task_system_dta->flag) //TODO: PREGUNTAR!
+				if ((true == p_task_system_dta->flag)
 					&& (EV_SYS_02_IDLE == p_task_system_dta->event)
 					&& (EV_SYS_03_IDLE == p_task_system_dta->event))
 				{
